@@ -7,7 +7,7 @@ public class Locadora {
     
 
     public static Locadora instancia; // referencia um objeto
-    protected string nome;
+    protected String nome;
     protected int totalFilmeTerror;
     protected int totalFilmeComedia;
     protected int totalFilmeAcao;
@@ -51,7 +51,7 @@ public class Locadora {
     }
 
     public String gerarRelatorio() {
-        return new String("\n" + "Total de filmes de  alugados: " + somar() "\n");
+        return new String("\n" + "Total de filmes de  alugados: " + somar() + "\n");
     }
     
 }
