@@ -7,12 +7,12 @@ public class FilmeAcao extends LocadoraAdapter{
 	}
 	
 	public String filmeAcao(){
-		return "Filme de ação";
+		return "Filme de ação: " + name;
 	}
 	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Filme de aÃ§Ã£o";
+		return "Filme " + name;
 	}
 }

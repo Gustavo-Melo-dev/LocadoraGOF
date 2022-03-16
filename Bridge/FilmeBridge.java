@@ -10,37 +10,37 @@ public class FilmeBridge implements AbstractFilme {
 
 	@Override
 	public String filmeTerror() {
-		return "Assistir filme de terror!";
+		return "Filme " + this.name + " foi alugado!";
 		
 	}
 
 	@Override
 	public String filmeRomance() {
-		return "Assistir filme de romance!";
+		return "Filme " + this.name + " foi alugado!";
 		
 	}
 
 	@Override
 	public String filmeComedia() {
-		return "Assistir filme " + this.name;
+		return "Filme " + this.name + " foi alugado!";
 		
 	}
 
 	@Override
 	public String filmeAcao() {
-		return "Assistir filme " + this.name;
+		return "Filme " + this.name + " foi alugado!";
 		
 	}
 
 	@Override
 	public String  filmeDocumentario() {
-		return "Assistir filme de documentário!";
+		return "Filme " + this.name + " foi alugado!";
 		
 	}
 
 	@Override
 	public String filmeFiccaoCientifica() {
-		return "Assistir filme de ficção científica!";
+		return "Filme " + this.name + " foi alugado!";
 	}
 
 	

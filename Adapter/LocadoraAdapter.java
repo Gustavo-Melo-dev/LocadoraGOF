@@ -4,6 +4,10 @@ public class LocadoraAdapter {
 
 	public String name;
 	
+	public LocadoraAdapter() {
+		
+	}
+	
 	public LocadoraAdapter(String name) {
 		this.name = name;
 	}

@@ -13,6 +13,6 @@ public class FilmeDocumentario extends LocadoraAdapter{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Filme de documentário";
+		return "Filme " + name;
 	}
 }
