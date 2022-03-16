@@ -1,4 +1,4 @@
-package AbstractyFactoryLocadora;
+package AbstractyFactory;
 
 public interface Locadora {
 

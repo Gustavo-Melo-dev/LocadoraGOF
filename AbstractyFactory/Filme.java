@@ -1,4 +1,4 @@
-package AbstractyFactoryLocadora;
+package AbstractyFactory;
 
 public class Filme implements Locadora{
 

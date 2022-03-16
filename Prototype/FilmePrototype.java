@@ -1,4 +1,4 @@
-package PrototypeLocadora;
+package Prototype;
 
 public abstract class FilmePrototype {
 

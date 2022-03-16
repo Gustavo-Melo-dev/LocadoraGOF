@@ -1,4 +1,4 @@
-package PrototypeLocadora;
+package Prototype;
 
 public class FilmeDocumentario extends FilmePrototype {
 	
