@@ -27,24 +27,30 @@ public class Locadora {
         return instancia;
     }
     
-    public String filmeTerror() {
-        return new String("Carro Volks " + totalFilmeTerror++ + " criado ");
+    public String filmeTerror(String nome) {
+    	totalFilmeTerror++;
+        return new String("Filme de terror " + nome  + " alugado.");
     }
 
-    public String filmeComedia() {
-        return new String("Carro Volks " + totalFilmeComedia++ + " criado ");
+    public String filmeComedia(String nome) {
+    	totalFilmeComedia++;
+        return new String("Filme de comédia " + nome  + " alugado.");
     }
-    public String filmeAcao() {
-        return new String("Carro Volks " + totalFilmeAcao++ + " criado ");
+    public String filmeAcao(String nome) {
+    	totalFilmeAcao++;
+        return new String("Filme de ação " + nome  + " alugado.");
     }
-    public String filmeDocumentario() {
-        return new String("Carro Volks " + totalFilmeDocumentario++ + " criado ");
+    public String filmeDocumentario(String nome) {
+    	totalFilmeDocumentario++;
+        return new String("Filme de documentário " + nome  + " alugado.");
     }
-    public String filmeFiccaoCientifica() {
-        return new String("Carro Volks " + totalFilmeFiccaoCientifica++ + " criado ");
+    public String filmeFiccaoCientifica(String nome) {
+    	totalFilmeFiccaoCientifica++;
+        return new String("Filme de ficção científica " + nome  + " alugado.");
     }
-    public String filmeRomance() {
-        return new String("Carro Volks " + totalFilmeRomance++ + " criado ");
+    public String filmeRomance(String nome) {
+    	totalFilmeRomance++;
+        return new String("Filme de romance " + nome  + " alugado.");
     }
     public int somar(){
         return totalFilmeAcao+ totalFilmeComedia + totalFilmeDocumentario + totalFilmeFiccaoCientifica + totalFilmeTerror + totalFilmeRomance;
