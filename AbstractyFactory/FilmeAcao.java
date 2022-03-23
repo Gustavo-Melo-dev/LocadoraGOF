@@ -1,14 +1,20 @@
 package AbstractyFactory;
 
 public class FilmeAcao {
+	
+	public String nome;
 
-	public String filmeAcao() {
-		return "Filme de ação";
+	public FilmeAcao(String nome) {
+		this.nome = nome;
+	}
+
+	public String filmeAcao(String nome) {
+		return "Filme de a��o " + nome + " alugado!";
 	}
 	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Filme de ação";
+		return filmeAcao(nome);
 	}
 }

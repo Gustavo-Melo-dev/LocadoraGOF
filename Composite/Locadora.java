@@ -1,34 +1,36 @@
 package Composite;
 
 public class Locadora implements FilmeComponentes{
+	
+	public String nome;
 
-    @Override
-	public FilmeTerror filmeTerror() {
-	return new FilmeTerror();
+	@Override
+	public String filmeTerror(String nome) {
+	return "Filme de terror " + nome + " alugado!";
 	}
 
 	@Override
-	public FilmeAcao filmeAcao() {
-	return new FilmeAcao();
+	public String filmeAcao(String nome) {
+	return "Filme de ação " + nome + " alugado!";
 	}
 
 	@Override
-	public FilmeComedia filmeComedia() {
-	return new FilmeComedia();
+	public String filmeComedia(String nome) {
+	return "Filme de comédia " + nome + " alugado!";
 	}
 
 	@Override
-	public FilmeDocumentario filmeDocumentario() {
-	return new FilmeDocumentario();
+	public String filmeDocumentario(String nome) {
+	return "Filme de documentário " + nome + " alugado!";
 	}
 
 	@Override
-	public FilmeFiccaoCientifica filmeFiccaoCientifica() {
-	return new FilmeFiccaoCientifica();
+	public String filmeFiccaoCientifica(String nome) {
+	return "Filme de ficção " + nome + " alugado!";
 	}
 
 	@Override
-	public FilmeRomance filmeRomance() {
-	return new FilmeRomance();
+	public String filmeRomance(String nome) {
+	return "Filme de romance " + nome + " alugado!";
     }
 }

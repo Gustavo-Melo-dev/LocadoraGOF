@@ -4,3 +4,13 @@
 /ConcessionariaDirector.class
 /FiatBuilder.class
 /VolksBuilder.class
+/FilmeBuilder.class
+/FilmeProduto.class
+/Locadora.class
+/FilmeAcao.class
+/FilmeAcaoBuilder.class
+/FilmeRomanceBuilder.class
+/FilmeComediaBuilder.class
+/FilmeTerrorBuilder.class
+/FilmeFiccaoCientificaBuilder.class
+/FilmeDocumentarioBuilder.class

@@ -2,16 +2,16 @@ package Composite;
 
 public interface FilmeComponentes{
 
-    public String filmeTerror();
+    public String filmeTerror(String nome);
 
-    public String filmeRomance();
+    public String filmeRomance(String nome);
     
-    public String filmeComedia();
+    public String filmeComedia(String nome);
     
-    public String filmeAcao();
+    public String filmeAcao(String nome);
     
-    public String filmeDocumentario();
+    public String filmeDocumentario(String nome);
     
-	public String filmeFiccaoCientifica();    
+	public String filmeFiccaoCientifica(String nome);
 
 }

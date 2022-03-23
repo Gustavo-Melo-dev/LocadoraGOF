@@ -1,40 +1,40 @@
 package AbstractyFactory;
 
 public class Filme implements Locadora{
-
+	
 	@Override
-	public FilmeTerror filmeTerror() {
+	public FilmeTerror filmeTerror(String nome) {
 		// TODO Auto-generated method stub
-		return new FilmeTerror();
+		return new FilmeTerror(nome);
 	}
 
 	@Override
-	public FilmeAcao filmeAcao() {
+	public FilmeAcao filmeAcao(String nome) {
 		// TODO Auto-generated method stub
-		return new FilmeAcao();
+		return new FilmeAcao(nome);
 	}
 
 	@Override
-	public FilmeComedia filmeComedia() {
+	public FilmeComedia filmeComedia(String nome) {
 		// TODO Auto-generated method stub
-		return new FilmeComedia();
+		return new FilmeComedia(nome);
 	}
 
 	@Override
-	public FilmeDocumentario filmeDocumentario() {
+	public FilmeDocumentario filmeDocumentario(String nome) {
 		// TODO Auto-generated method stub
-		return new FilmeDocumentario();
+		return new FilmeDocumentario(nome);
 	}
 
 	@Override
-	public FilmeFiccaoCientifica filmeFiccaoCientifica() {
+	public FilmeFiccaoCientifica filmeFiccaoCientifica(String nome) {
 		// TODO Auto-generated method stub
-		return new FilmeFiccaoCientifica();
+		return new FilmeFiccaoCientifica(nome);
 	}
 
 	@Override
-	public FilmeRomance filmeRomance() {
+	public FilmeRomance filmeRomance(String nome) {
 		// TODO Auto-generated method stub
-		return new FilmeRomance();
+		return new FilmeRomance(nome);
 	}
 }
