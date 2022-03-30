@@ -1,4 +1,4 @@
-package TemplateMethod;
+package Command;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Cliente {
 
 	public static void main(String[] args) {
-		
-		Filme filmeLoc = new Filme();
+		// TODO Auto-generated method stub
+
 		Scanner sc = new Scanner(System.in);
 		List<String> listFilme = new ArrayList<String>();
 		String nome;
@@ -17,56 +17,57 @@ public class Cliente {
 		System.out.print("Digite o código de gênero: ");
 		seletor = sc.nextInt();
 		
-		while(seletor != 0) {		
+		while(seletor != 0) {
 			if(seletor == 1) {
 				System.out.print("Digite o nome do filme: ");
 				nome = sc.next();
-				FilmeAcao clienteAcao = filmeLoc.filmeAcao(nome);
+				Filme filme = new FilmeAcao(nome);
+				System.out.println(filme.toString());
 				listFilme.add(nome);
-				System.out.println(clienteAcao);
-				System.out.print("Digite o código de gênero");
+				System.out.print("Digite o código de gênero: ");
 				seletor = sc.nextInt();
 			} else if(seletor == 2) {
 				System.out.print("Digite o nome do filme: ");
 				nome = sc.next();
-				FilmeComedia clienteComedia = filmeLoc.filmeComedia(nome);
+				Filme filme = new FilmeRomance(nome);
+				System.out.println(filme.toString());
 				listFilme.add(nome);
-				System.out.println(clienteComedia);
-				System.out.print("Digite o código de gênero");
+				System.out.print("Digite o código de gênero: ");
 				seletor = sc.nextInt();
 			} else if(seletor == 3) {
 				System.out.print("Digite o nome do filme: ");
 				nome = sc.next();
-				FilmeDocumentario clienteDocumentario = filmeLoc.filmeDocumentario(nome);
+				Filme filme = new FilmeTerror(nome);
+				System.out.println(filme.toString());
 				listFilme.add(nome);
-				System.out.println(clienteDocumentario);
-				System.out.print("Digite o código de gênero");
+				System.out.print("Digite o código de gênero: ");
 				seletor = sc.nextInt();
 			} else if(seletor == 4) {
 				System.out.print("Digite o nome do filme: ");
 				nome = sc.next();
-				FilmeFiccaoCientifica clienteFiccao = filmeLoc.filmeFiccaoCientifica(nome);
+				Filme filme = new FilmeComedia(nome);
+				System.out.println(filme.toString());
 				listFilme.add(nome);
-				System.out.println(clienteFiccao);
-				System.out.print("Digite o código de gênero");
+				System.out.print("Digite o código de gênero: ");
 				seletor = sc.nextInt();
 			} else if(seletor == 5) {
 				System.out.print("Digite o nome do filme: ");
 				nome = sc.next();
-				FilmeRomance clienteRomance = filmeLoc.filmeRomance(nome);
+				Filme filme = new FilmeFiccaoCientifica(nome);
+				System.out.println(filme.toString());
 				listFilme.add(nome);
-				System.out.println(clienteRomance);
-				System.out.print("Digite o código de gênero");
+				System.out.print("Digite o código de gênero: ");
 				seletor = sc.nextInt();
 			} else if(seletor == 6) {
 				System.out.print("Digite o nome do filme: ");
 				nome = sc.next();
-				FilmeTerror clienteTerror = filmeLoc.filmeTerror(nome);
+				Filme filme = new FilmeDocumentario(nome);
+				System.out.println(filme.toString());
 				listFilme.add(nome);
-				System.out.println(clienteTerror);
-				System.out.print("Digite o código de gênero");
+				System.out.print("Digite o código de gênero: ");
 				seletor = sc.nextInt();
 			}
+			
 		}
 		
 		sc.close();
@@ -80,7 +81,6 @@ public class Cliente {
 		
 		System.out.println();
 		System.out.println("Sessão finalizada, obrigado por confiar em nosso serviço!");
-		
 	}
 
 }

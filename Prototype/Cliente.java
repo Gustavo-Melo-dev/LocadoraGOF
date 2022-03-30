@@ -20,62 +20,70 @@ public class Cliente {
 		System.out.print("Digite o código do gênero: ");
 		seletor = sc.nextInt();
 
-		if(seletor == 1) {
-			FilmeAcao filmeLocAcao = new FilmeAcao();
-			FilmePrototype clienteAcao = filmeLocAcao.clonar();
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			clienteAcao.setNomeFilme(nome);
-			listFilme.add(nome);
-			System.out.println(clienteAcao.exibirInfo());
-		} else if(seletor == 2) {
-			FilmeComedia filmeLocComedia = new FilmeComedia();
-			FilmePrototype clienteComedia = filmeLocComedia.clonar();
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			clienteComedia.setNomeFilme(nome);
-			listFilme.add(nome);
-			System.out.println(clienteComedia.exibirInfo());
-		} else if(seletor == 3) {
-			FilmeDocumentario filmeLocDocumentario = new FilmeDocumentario();
-			FilmeDocumentario clienteDocumentario = filmeLocDocumentario.clonar();
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			clienteDocumentario.setNomeFilme(nome);
-			listFilme.add(nome);
-			System.out.println(clienteDocumentario.exibirInfo());
-		} else if(seletor == 4) {
-			FilmeTerror filmeLocTerror = new FilmeTerror();
-			FilmeTerror clienteTerror = filmeLocTerror.clonar();
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			clienteTerror.setNomeFilme(nome);
-			listFilme.add(nome);
-			System.out.println(clienteTerror.exibirInfo());
-		} else if(seletor == 5) {
-			FilmeRomance filmeLocRomance = new FilmeRomance();
-			FilmeRomance clienteRomance = filmeLocRomance.clonar();
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			clienteRomance.setNomeFilme(nome);
-			listFilme.add(nome);
-			System.out.println(clienteRomance.exibirInfo());
-		} else if(seletor == 6) {
-			FilmeFiccaoCientifica filmeLocFiccaoCientifica = new FilmeFiccaoCientifica();
-			FilmeFiccaoCientifica clienteFiccaoCientifica = filmeLocFiccaoCientifica.clonar();
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			clienteFiccaoCientifica.setNomeFilme(nome);
-			listFilme.add(nome);
-			System.out.println(clienteFiccaoCientifica.exibirInfo());
+		while(seletor != 0) {
+			if(seletor == 1) {
+				FilmeAcao filmeLocAcao = new FilmeAcao();
+				FilmePrototype clienteAcao = filmeLocAcao.clonar();
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				clienteAcao.setNomeFilme(nome);
+				listFilme.add(nome);
+				System.out.println(clienteAcao.exibirInfo());
+			} else if(seletor == 2) {
+				FilmeComedia filmeLocComedia = new FilmeComedia();
+				FilmePrototype clienteComedia = filmeLocComedia.clonar();
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				clienteComedia.setNomeFilme(nome);
+				listFilme.add(nome);
+				System.out.println(clienteComedia.exibirInfo());
+			} else if(seletor == 3) {
+				FilmeDocumentario filmeLocDocumentario = new FilmeDocumentario();
+				FilmeDocumentario clienteDocumentario = filmeLocDocumentario.clonar();
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				clienteDocumentario.setNomeFilme(nome);
+				listFilme.add(nome);
+				System.out.println(clienteDocumentario.exibirInfo());
+			} else if(seletor == 4) {
+				FilmeTerror filmeLocTerror = new FilmeTerror();
+				FilmeTerror clienteTerror = filmeLocTerror.clonar();
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				clienteTerror.setNomeFilme(nome);
+				listFilme.add(nome);
+				System.out.println(clienteTerror.exibirInfo());
+			} else if(seletor == 5) {
+				FilmeRomance filmeLocRomance = new FilmeRomance();
+				FilmeRomance clienteRomance = filmeLocRomance.clonar();
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				clienteRomance.setNomeFilme(nome);
+				listFilme.add(nome);
+				System.out.println(clienteRomance.exibirInfo());
+			} else if(seletor == 6) {
+				FilmeFiccaoCientifica filmeLocFiccaoCientifica = new FilmeFiccaoCientifica();
+				FilmeFiccaoCientifica clienteFiccaoCientifica = filmeLocFiccaoCientifica.clonar();
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				clienteFiccaoCientifica.setNomeFilme(nome);
+				listFilme.add(nome);
+				System.out.println(clienteFiccaoCientifica.exibirInfo());
+			}
+			
 		}
 		
 		sc.close();
 		
-		System.out.println("Filmes alugados: ");
-		for(String x : listFilme) {
-			System.out.println(x);
+		System.out.println();
+		System.out.println("Filme(s) alugado(s): ");
+		
+		for(String filme : listFilme) {
+			System.out.println(filme);
 		}
+		
+		System.out.println();
+		System.out.println("Sessão finalizada, obrigado por confiar em nosso serviço!");
 	}
 
 }

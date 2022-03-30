@@ -23,45 +23,65 @@ public class Cliente {
 		System.out.print("Digite o código do gênero: ");
 		seletor = sc.nextInt();
 
-		if(seletor == 1) {
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			FilmeAcao filmeAcao = new FilmeAcao(nome);
-			listaObjetos.add(filmeAcao);
-			nomeFilmes.add(nome);
-		} else if(seletor == 2) {
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			FilmeRomance filmeRomance = new FilmeRomance(nome);
-			listaObjetos.add(filmeRomance);
-		} else if(seletor == 3) {
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			FilmeTerror filmeTerror = new FilmeTerror(nome);
-			listaObjetos.add(filmeTerror);
-		} else if(seletor == 4) {
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			FilmeComedia filmeComedia = new FilmeComedia(nome);
-			listaObjetos.add(filmeComedia);
-		} else if(seletor == 5) {
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			FilmeDocumentario filmeDocumentario = new FilmeDocumentario(nome);
-			listaObjetos.add(filmeDocumentario);
-		} else if(seletor == 6) {
-			System.out.print("Digite o nome do filme: ");
-			nome = sc.next();
-			FilmeFiccaoCientifica filmeFiccaoCientifica = new FilmeFiccaoCientifica(nome);
-			listaObjetos.add(filmeFiccaoCientifica);
+		while(seletor != 0) {
+			if(seletor == 1) {
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				FilmeAcao filmeAcao = new FilmeAcao(nome);
+				listaObjetos.add(filmeAcao);
+				nomeFilmes.add(nome);
+				System.out.print("Digite o código do gênero: ");
+				seletor = sc.nextInt();
+			} else if(seletor == 2) {
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				FilmeRomance filmeRomance = new FilmeRomance(nome);
+				listaObjetos.add(filmeRomance);
+				System.out.print("Digite o código do gênero: ");
+				seletor = sc.nextInt();
+			} else if(seletor == 3) {
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				FilmeTerror filmeTerror = new FilmeTerror(nome);
+				listaObjetos.add(filmeTerror);
+				System.out.print("Digite o código do gênero: ");
+				seletor = sc.nextInt();
+			} else if(seletor == 4) {
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				FilmeComedia filmeComedia = new FilmeComedia(nome);
+				listaObjetos.add(filmeComedia);
+				System.out.print("Digite o código do gênero: ");
+				seletor = sc.nextInt();
+			} else if(seletor == 5) {
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				FilmeDocumentario filmeDocumentario = new FilmeDocumentario(nome);
+				listaObjetos.add(filmeDocumentario);
+				System.out.print("Digite o código do gênero: ");
+				seletor = sc.nextInt();
+			} else if(seletor == 6) {
+				System.out.print("Digite o nome do filme: ");
+				nome = sc.next();
+				FilmeFiccaoCientifica filmeFiccaoCientifica = new FilmeFiccaoCientifica(nome);
+				listaObjetos.add(filmeFiccaoCientifica);
+				System.out.print("Digite o código do gênero: ");
+				seletor = sc.nextInt();
+			}
 		}
+		sc.close();
+		
+		System.out.println();
+		System.out.println("Filme(s) alugado(s): ");
+		System.out.println();
 		
 		
 		for(Object filme : listaObjetos) {
 			System.out.println(filme + " foi alugado!");
 		}
 		
-		sc.close();
+		System.out.println();
+		System.out.println("Sessão finalizada, obrigado por confiar em nosso serviço!");
 	
 	}
 }
